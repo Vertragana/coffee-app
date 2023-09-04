@@ -1,97 +1,130 @@
-.header{
-    text-align: center;
-    display: flex;
-    justify-content: center;
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
 
-    background-color: rgba(49, 17, 8, 0.925);
-}
-
-.logo{
-    height: 50px;
-    width: 50px;
-    
+  background-color: rgba(49, 17, 8, 0.925);
 }
 
-h3{
-    color: rgb(248, 222, 182);
+.logo {
+  height: 50px;
+  width: 50px;
 }
-h2{
-    color: rgb(108, 77, 30); 
-    font-size: 15px;
+
+h3 {
+  color: rgb(248, 222, 182);
 }
-.content{
-    display: grid;
-    grid-template-areas: "items payment"
+h2 {
+  color: rgb(108, 77, 30);
+  font-size: 15px;
+}
+.content {
+  display: grid;
+  grid-template-areas:
+    "items payment"
     "total total"
     "button-order  button-order";
 }
-.payment{
-    grid-area: payment;
+.payment {
+  grid-area: payment;
+  display: grid;
+  grid-template-rows: max-content;
+  row-gap: 20px;
 }
 
-.button-order{
-    grid-area: button-order;
+.button-order {
+  grid-area: button-order;
 }
-.items{
-   background-color: antiquewhite; 
-   border-radius: 5px;
-   margin: 10px;
-   grid-area: items;
+.items {
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin: 10px;
+  grid-area: items;
 }
-.first-row{
-    display: block;
-}
-.item-quantity{
-    margin: 0%;
-}
-.item-name{
-    margin: 10px;
-}
-.item-price{
-   
-    margin-left: 10px;
-    padding-right:  150px;
-}
-.item-option-list{
-    margin: 20px;
-}
-.item{
- list-style-type: none;
+.first-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
 }
 
-
-.total{
-    
-    grid-area: total;
+.column {
+  display: flex;
+  justify-content: space-around;
+}
+.item-quantity {
+  margin-right: 10px;
+}
+.item-name {
+  display: flex;
+  flex-direction: column;
+}
+.item-price {
+  margin-right: 10px;
+}
+.item-option-list {
+  font-size: 15px;
+}
+.item {
+  list-style-type: none;
 }
 
-.subtotal{
-    
+.total {
+  grid-area: total;
+}
+
+.subtotal {
 }
 
 .input-group {
-    position: relative;
-    display: inline-block;
-  }
-  .input-label{
-    background-color: white;
-    color: rgba(75, 10, 10, 0.998);
-    font-size: 11px;
-    position: absolute;
-    left: 25px;
-    top: -7px;
-    padding: 0 2px;
-  }
+  position: relative;
+  display: inline-block;
+}
+.input-label {
+  background-color: antiquewhite;
+  color: rgba(75, 10, 10, 0.998);
+  font-size: 11px;
+  position: absolute;
+  left: 25px;
+  top: -7px;
+  padding: 0 2px;
+}
 
-  .input-text {
-    border-color: rgba(75, 10, 10, 0.998);
-    padding: 8px;
-    border-radius: 225px;
-  }
+.input-text {
+  border-color: rgba(75, 10, 10, 0.998);
+  padding: 8px;
+  border-radius: 225px;
+}
+.long {
+  display: block;
+  width: 95%;
+}
 
-  .card{
-    display: grid;
-    background-color: antiquewhite; 
-   border-radius: 5px;
-   margin: 10px;
-    }
+.card {
+  display: grid;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+.container {
+  display: grid;
+
+  grid-template-areas:
+    "card card card "
+    "ccv  . . ";
+  row-gap: 10px;
+}
+.card-number {
+  grid-area: card;
+}
+.ccv-number {
+  grid-area: ccv;
+}
+.name {
+  background-color: antiquewhite;
+}
+.name-for-order {
+  display: grid;
+}
+
+.input-text {
+  background-color: antiquewhite;
+}
