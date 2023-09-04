@@ -15,23 +15,58 @@
 h3{
     color: rgb(248, 222, 182);
 }
-
+h2{
+    color: rgb(108, 77, 30); 
+    font-size: 15px;
+}
 .content{
     display: grid;
     grid-template-areas: "items payment"
-    "total total";
+    "total total"
+    "button-order  button-order";
+}
+.payment{
+    grid-area: payment;
 }
 
-.item{
-    display: flex;
+.button-order{
+    grid-area: button-order;
 }
+.items{
+   background-color: antiquewhite; 
+   border-radius: 5px;
+   margin: 10px;
+   grid-area: items;
+}
+.first-row{
+    display: block;
+}
+.item-quantity{
+    margin: 0%;
+}
+.item-name{
+    margin: 10px;
+}
+.item-price{
+   
+    margin-left: 10px;
+    padding-right:  150px;
+}
+.item-option-list{
+    margin: 20px;
+}
+.item{
+ list-style-type: none;
+}
+
 
 .total{
-    display: flex;
+    
+    grid-area: total;
 }
 
 .subtotal{
-    display: flex;
+    
 }
 
 .input-group {
@@ -56,7 +91,7 @@ h3{
 
   .card{
     display: grid;
-    
-
-
-  }
+    background-color: antiquewhite; 
+   border-radius: 5px;
+   margin: 10px;
+    }
