@@ -44,7 +44,7 @@ h2 {
 .first-row {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(247, 184, 83);
 }
 
 .column {
@@ -66,13 +66,32 @@ h2 {
 }
 .item {
   list-style-type: none;
+  margin: 20px;
 }
 
-.total {
+.total-price {
   grid-area: total;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin: 30px;
 }
 
-.subtotal {
+.sub {
+  display: flex;
+  gap: 60px;
+  margin: 10px;
+}
+.tax {
+  display: flex;
+  gap: 88px;
+  margin: 10px;
+}
+.total {
+  display: flex;
+  gap: 80px;
+  margin: 10px;
+  font-weight: bold;
 }
 
 .input-group {
@@ -117,14 +136,21 @@ h2 {
 }
 .ccv-number {
   grid-area: ccv;
+  margin-bottom: 20px;
 }
 .name {
   background-color: antiquewhite;
+  margin-top: 10px;
 }
 .name-for-order {
   display: grid;
+  margin-bottom: 20px;
 }
 
 .input-text {
   background-color: antiquewhite;
+}
+.button-order {
+  border-radius: 225px;
+  background-color: rgb(209, 154, 76);
 }
